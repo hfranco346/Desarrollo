@@ -7,15 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
+
+
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace Sistema_UNICAH
 {
-    public partial class frmDiagrama : Form
+    public partial class frmDiagrama : MaterialForm
     {
+        private readonly MaterialSkinManager materialSkinManager;
         public frmDiagrama()
         {
             InitializeComponent();
-            CreateDynamicButton("Boton ", 60);
+            CreateDynamicButton("Boton ", 43);
+            materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue900, Primary.Grey400, Primary.Grey400, Accent.Yellow700, TextShade.WHITE);
+
             
         }
 
@@ -27,18 +38,24 @@ namespace Sistema_UNICAH
         {
             while (Cantidad>0)
             {
+                string esp;
+                esp = "   ";
                 // Create a Button object 
                 Button dynamicButton = new Button();
 
                 // Set Button properties
-                dynamicButton.Height = 60;
+                dynamicButton.Height = 50;
                 dynamicButton.Width = 100;
-                dynamicButton.BackColor = Color.SteelBlue;
-                dynamicButton.ForeColor = Color.White;
-                dynamicButton.Text = Nombre+Cantidad.ToString();
-                dynamicButton.Name = Nombre + Cantidad.ToString();
-                dynamicButton.Font = new Font("Georgia", 8);
-                dynamicButton.FlatStyle = 0;
+                dynamicButton.BackColor = Color.Black;
+                dynamicButton.BackgroundImage = Image.FromFile("C:/Users/RioPc/Pictures/icono.Png");
+                dynamicButton.ForeColor = Color.LightSlateGray;
+                dynamicButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                dynamicButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                dynamicButton.Font = new Font("Georgia", 10);
+                dynamicButton.FlatStyle = FlatStyle.Popup;
+                dynamicButton.Text = esp + Nombre + Cantidad.ToString();
+                dynamicButton.Name =  Nombre + Cantidad.ToString();
+                
 
                 dynamicButton.Visible = true;
 
@@ -59,6 +76,17 @@ namespace Sistema_UNICAH
             string nameButton;
             nameButton = dynamicButton.Name;
             MessageBox.Show(nameButton);
+            
+        }
+
+        private void btnconfirmar_Click(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         
