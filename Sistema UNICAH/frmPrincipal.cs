@@ -25,8 +25,12 @@ namespace Sistema_UNICAH
 
         private void btnmatricula_Click(object sender, EventArgs e)
         {
-            frmMatricula frmmatricula = new frmMatricula();
-            frmmatricula.ShowDialog(this);
+            frmDiagrama frmdiagrama = new frmDiagrama();
+            frmdiagrama.Width = 881;
+            frmdiagrama.Text = "Diagrama                                                                                                                Universidad Católica de Honduras";
+            frmdiagrama.ShowDialog(this);
+            
+
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)

@@ -56,8 +56,7 @@ namespace Sistema_UNICAH
                 dynamicButton.FlatStyle = FlatStyle.Popup;
                 dynamicButton.Text = esp + Nombre + Cantidad.ToString();
                 dynamicButton.Name =  Nombre + Cantidad.ToString();
-                
-
+               
                 dynamicButton.Visible = true;
 
                 // Add a Button Click Event handler
