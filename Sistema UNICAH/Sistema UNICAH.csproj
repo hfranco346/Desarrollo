@@ -57,6 +57,12 @@
     <Compile Include="frmDiagrama.Designer.cs">
       <DependentUpon>frmDiagrama.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmDiagrama.resx">
       <DependentUpon>frmDiagrama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMatricula.resx">
       <DependentUpon>frmMatricula.cs</DependentUpon>
@@ -126,6 +135,7 @@
     <None Include="Resources\icono.png" />
     <None Include="Resources\iconomorado.png" />
     <None Include="Resources\iconoverde.png" />
+    <Content Include="Resources\Login.PNG" />
     <Content Include="Scripts\LICENSE.txt" />
     <Content Include="Scripts\polymer-micro.html" />
     <Content Include="Scripts\polymer-mini.html" />
