@@ -43,7 +43,7 @@
             // lblOlvideMiContrasena
             // 
             this.lblOlvideMiContrasena.AutoSize = true;
-            this.lblOlvideMiContrasena.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblOlvideMiContrasena.BackColor = System.Drawing.Color.LightGray;
             this.lblOlvideMiContrasena.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblOlvideMiContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOlvideMiContrasena.Location = new System.Drawing.Point(721, 335);
@@ -57,7 +57,7 @@
             // 
             this.btnIngresar.BackColor = System.Drawing.Color.LightGray;
             this.btnIngresar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresar.Location = new System.Drawing.Point(629, 326);
             this.btnIngresar.Name = "btnIngresar";
@@ -73,9 +73,10 @@
             this.txtContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContrasena.ForeColor = System.Drawing.Color.SteelBlue;
             this.txtContrasena.Location = new System.Drawing.Point(629, 265);
+            this.txtContrasena.Multiline = true;
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.PasswordChar = '*';
-            this.txtContrasena.Size = new System.Drawing.Size(232, 24);
+            this.txtContrasena.Size = new System.Drawing.Size(268, 36);
             this.txtContrasena.TabIndex = 15;
             this.txtContrasena.TextChanged += new System.EventHandler(this.txtContrasena_TextChanged);
             // 
@@ -97,17 +98,18 @@
             this.txtCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCuenta.ForeColor = System.Drawing.Color.SteelBlue;
             this.txtCuenta.Location = new System.Drawing.Point(628, 195);
+            this.txtCuenta.Multiline = true;
             this.txtCuenta.Name = "txtCuenta";
-            this.txtCuenta.Size = new System.Drawing.Size(232, 24);
+            this.txtCuenta.Size = new System.Drawing.Size(269, 34);
             this.txtCuenta.TabIndex = 13;
             this.txtCuenta.TextChanged += new System.EventHandler(this.txtCuenta_TextChanged);
             // 
             // lblIniciarSesion
             // 
             this.lblIniciarSesion.AutoSize = true;
-            this.lblIniciarSesion.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblIniciarSesion.BackColor = System.Drawing.Color.LightGray;
             this.lblIniciarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIniciarSesion.Location = new System.Drawing.Point(624, 91);
+            this.lblIniciarSesion.Location = new System.Drawing.Point(625, 98);
             this.lblIniciarSesion.Name = "lblIniciarSesion";
             this.lblIniciarSesion.Size = new System.Drawing.Size(133, 24);
             this.lblIniciarSesion.TabIndex = 12;
@@ -127,10 +129,10 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Gainsboro;
+            this.label1.BackColor = System.Drawing.Color.LightGray;
             this.label1.Location = new System.Drawing.Point(612, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(268, 372);
+            this.label1.Size = new System.Drawing.Size(300, 372);
             this.label1.TabIndex = 10;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -161,7 +163,8 @@
             this.Controls.Add(this.pbPantalla);
             this.Name = "frmLoginInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "Login                                                                       Unive" +
+    "rsidad Católica de Honduras";
             this.Load += new System.EventHandler(this.frmLoginInicial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbPantalla)).EndInit();
             this.ResumeLayout(false);

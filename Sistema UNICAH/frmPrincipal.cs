@@ -7,20 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace Sistema_UNICAH
 {
-    public partial class frmPrincipal : Form
+    public partial class frmPrincipal : MaterialForm
     {
+        private readonly MaterialSkinManager materialSkinManager;
         public frmPrincipal()
         {
             InitializeComponent();
+            materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue900, Primary.Grey400, Primary.Grey400, Accent.Yellow700, TextShade.WHITE);
+
         }
 
         private void btnDiagrama_Click(object sender, EventArgs e)
         {
             frmDiagrama frmdiagrama = new frmDiagrama();
             frmdiagrama.ShowDialog(this);
+            
         }
 
         private void btnmatricula_Click(object sender, EventArgs e)
