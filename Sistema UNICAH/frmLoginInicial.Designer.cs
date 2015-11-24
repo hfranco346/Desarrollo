@@ -107,6 +107,7 @@
             this.lblIniciarSesion.AutoSize = true;
             this.lblIniciarSesion.BackColor = System.Drawing.Color.Gainsboro;
             this.lblIniciarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIniciarSesion.ForeColor = System.Drawing.Color.Gray;
             this.lblIniciarSesion.Location = new System.Drawing.Point(624, 91);
             this.lblIniciarSesion.Name = "lblIniciarSesion";
             this.lblIniciarSesion.Size = new System.Drawing.Size(133, 24);
@@ -127,19 +128,19 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Gainsboro;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label1.Location = new System.Drawing.Point(612, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(268, 372);
+            this.label1.Size = new System.Drawing.Size(268, 350);
             this.label1.TabIndex = 10;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pbPantalla
             // 
             this.pbPantalla.Image = global::Sistema_UNICAH.Properties.Resources.Login;
-            this.pbPantalla.Location = new System.Drawing.Point(1, 67);
+            this.pbPantalla.Location = new System.Drawing.Point(4, 67);
             this.pbPantalla.Name = "pbPantalla";
-            this.pbPantalla.Size = new System.Drawing.Size(605, 372);
+            this.pbPantalla.Size = new System.Drawing.Size(602, 350);
             this.pbPantalla.TabIndex = 9;
             this.pbPantalla.TabStop = false;
             this.pbPantalla.Click += new System.EventHandler(this.pbPantalla_Click);
@@ -161,7 +162,9 @@
             this.Controls.Add(this.pbPantalla);
             this.Name = "frmLoginInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "7";
+            this.Text = "Login                                                                            " +
+    "                                                                          Univer" +
+    "sidad Católica de Honduras";
             this.Load += new System.EventHandler(this.frmLoginInicial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbPantalla)).EndInit();
             this.ResumeLayout(false);
