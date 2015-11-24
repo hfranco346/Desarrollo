@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BorderClippingExtension">
+      <HintPath>..\packages\BorderClippingExtension.dll.1.0.0\lib\BorderClippingExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -68,6 +74,9 @@
     <EmbeddedResource Include="frmDiagrama.resx">
       <DependentUpon>frmDiagrama.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMatricula.resx">
+      <DependentUpon>frmMatricula.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,7 +88,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -89,11 +100,37 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Scripts\bower.json" />
+    <None Include="Scripts\build.log" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Content\angular-material-icons\action.svg" />
+    <Content Include="Content\angular-material-icons\alert.svg" />
+    <Content Include="Content\angular-material-icons\av.svg" />
+    <Content Include="Content\angular-material-icons\communication.svg" />
+    <Content Include="Content\angular-material-icons\content.svg" />
+    <Content Include="Content\angular-material-icons\device.svg" />
+    <Content Include="Content\angular-material-icons\editor.svg" />
+    <Content Include="Content\angular-material-icons\file.svg" />
+    <Content Include="Content\angular-material-icons\hardware.svg" />
+    <Content Include="Content\angular-material-icons\image.svg" />
+    <Content Include="Content\angular-material-icons\maps.svg" />
+    <Content Include="Content\angular-material-icons\navigation.svg" />
+    <Content Include="Content\angular-material-icons\notification.svg" />
+    <Content Include="Content\angular-material-icons\social.svg" />
+    <Content Include="Content\angular-material-icons\toggle.svg" />
+    <None Include="Resources\unicah.png" />
+    <None Include="Resources\icono.png" />
+    <None Include="Resources\iconomorado.png" />
+    <None Include="Resources\iconoverde.png" />
+    <Content Include="Scripts\LICENSE.txt" />
+    <Content Include="Scripts\polymer-micro.html" />
+    <Content Include="Scripts\polymer-mini.html" />
+    <Content Include="Scripts\polymer.html" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
