@@ -33,5 +33,11 @@ namespace Sistema_UNICAH
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmLogin frmlogin = new frmLogin();
+            frmlogin.ShowDialog(this);
+        }
     }
 }

@@ -30,6 +30,7 @@
         {
             this.btnDiagrama = new System.Windows.Forms.Button();
             this.btnmatricula = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDiagrama
@@ -58,12 +59,26 @@
             this.btnmatricula.UseVisualStyleBackColor = false;
             this.btnmatricula.Click += new System.EventHandler(this.btnmatricula_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.SteelBlue;
+            this.button1.Location = new System.Drawing.Point(288, 299);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 51);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Login";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1184, 681);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnmatricula);
             this.Controls.Add(this.btnDiagrama);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -79,6 +94,7 @@
 
         private System.Windows.Forms.Button btnDiagrama;
         private System.Windows.Forms.Button btnmatricula;
+        private System.Windows.Forms.Button button1;
     }
 }
 
