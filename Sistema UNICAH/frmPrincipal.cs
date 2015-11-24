@@ -22,5 +22,16 @@ namespace Sistema_UNICAH
             frmDiagrama frmdiagrama = new frmDiagrama();
             frmdiagrama.ShowDialog(this);
         }
+
+        private void btnmatricula_Click(object sender, EventArgs e)
+        {
+            frmMatricula frmmatricula = new frmMatricula();
+            frmmatricula.ShowDialog(this);
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
