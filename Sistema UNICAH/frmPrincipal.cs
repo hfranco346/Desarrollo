@@ -53,5 +53,16 @@ namespace Sistema_UNICAH
             frmLoginInicial frmlogin = new frmLoginInicial();
             frmlogin.ShowDialog(this);
         }
+
+        private void btnRegistro_Click(object sender, EventArgs e)
+        {
+            frmRegistro frmregistro = new frmRegistro();
+            frmregistro.ShowDialog(this);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

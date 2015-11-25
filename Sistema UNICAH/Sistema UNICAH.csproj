@@ -145,6 +145,7 @@
     <None Include="Resources\iconomorado.png" />
     <None Include="Resources\iconoverde.png" />
     <None Include="Resources\barraunicah.png" />
+    <None Include="Resources\boton.png" />
     <Content Include="Resources\Login.PNG" />
     <Content Include="Scripts\LICENSE.txt" />
     <Content Include="Scripts\polymer-micro.html" />
