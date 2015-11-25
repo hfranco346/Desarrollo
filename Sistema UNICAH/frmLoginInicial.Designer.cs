@@ -161,7 +161,7 @@
             this.Controls.Add(this.pbPantalla);
             this.Name = "frmLoginInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "7";
             this.Load += new System.EventHandler(this.frmLoginInicial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbPantalla)).EndInit();
             this.ResumeLayout(false);
