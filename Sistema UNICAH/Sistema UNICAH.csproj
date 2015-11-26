@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\ClasesCarrera.cs" />
     <Compile Include="Clases\Conectar.cs" />
     <Compile Include="frmDiagrama.cs">
       <SubType>Form</SubType>

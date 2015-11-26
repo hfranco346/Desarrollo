@@ -13,12 +13,16 @@ using System.Windows.Forms.VisualStyles;
 using MaterialSkin;
 using MaterialSkin.Controls;
 
+using System.Data;
+using System.Data.SqlClient;
+
 namespace Sistema_UNICAH
 {
     public partial class frmDiagrama : MaterialForm
     {
         private readonly MaterialSkinManager materialSkinManager;
         List<string> Botones = new List<string>();
+        Clases.Conectar conn = new Clases.Conectar();
         public frmDiagrama()
         {
             InitializeComponent();
@@ -34,6 +38,38 @@ namespace Sistema_UNICAH
         private void frmDiagrama_Load(object sender, EventArgs e)
         {
             
+
+            // Crear el query
+            string sql = @"select Name, ProductNumber from Production.Product";
+
+            // Crear el comando
+            SqlCommand myCommand = conn.Comando(sql);
+            //txtReader.AppendText("Comando creado.\n\n");
+
+            try
+            {
+                // Establecer la conexión
+                conn.DbOpen();
+
+                // Ejecutar el query via un ExecuteReader
+                SqlDataReader rdr = myCommand.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    //txtReader.AppendText("\nProducto: ");
+                    //txtReader.AppendText(rdr.GetValue(1) + "\t\t" + rdr.GetValue(0));
+                    //txtReader.AppendText("\n");
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace, "Detalles de la excepción");
+            }
+            finally
+            {
+                // Cerrar la conexión
+                conn.DbClose();
+            }
         }
         private void CreateDynamicButton(string Nombre,int Cantidad)
         {
