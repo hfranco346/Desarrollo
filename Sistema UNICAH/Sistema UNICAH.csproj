@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\ClasesCarrera.cs" />
     <Compile Include="Clases\Conectar.cs" />
     <Compile Include="frmDiagrama.cs">
       <SubType>Form</SubType>
@@ -142,10 +143,10 @@
     <Content Include="Content\angular-material-icons\toggle.svg" />
     <None Include="Resources\unicah.png" />
     <None Include="Resources\icono.png" />
-    <None Include="Resources\iconomorado.png" />
-    <None Include="Resources\iconoverde.png" />
     <None Include="Resources\barraunicah.png" />
     <None Include="Resources\boton.png" />
+    <Content Include="Resources\iconomorado.png" />
+    <Content Include="Resources\iconoverde.png" />
     <Content Include="Resources\Login.PNG" />
     <Content Include="Scripts\LICENSE.txt" />
     <Content Include="Scripts\polymer-micro.html" />
