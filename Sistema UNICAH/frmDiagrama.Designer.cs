@@ -55,14 +55,14 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(52, 285);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 7, 3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(568, 288);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(775, 288);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // ltbclases
             // 
             this.ltbclases.FormattingEnabled = true;
-            this.ltbclases.Location = new System.Drawing.Point(663, 309);
+            this.ltbclases.Location = new System.Drawing.Point(882, 284);
             this.ltbclases.Name = "ltbclases";
             this.ltbclases.Size = new System.Drawing.Size(179, 199);
             this.ltbclases.TabIndex = 1;
@@ -80,7 +80,7 @@
             this.btnconfirmar.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnconfirmar.Image = global::Sistema_UNICAH.Properties.Resources.icono;
             this.btnconfirmar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnconfirmar.Location = new System.Drawing.Point(687, 525);
+            this.btnconfirmar.Location = new System.Drawing.Point(906, 500);
             this.btnconfirmar.Name = "btnconfirmar";
             this.btnconfirmar.Size = new System.Drawing.Size(139, 48);
             this.btnconfirmar.TabIndex = 2;
@@ -106,7 +106,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(52, 106);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(568, 169);
+            this.groupBox1.Size = new System.Drawing.Size(775, 169);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Alumno";
@@ -244,7 +244,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(662, 585);
+            this.ClientSize = new System.Drawing.Size(879, 585);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnconfirmar);
             this.Controls.Add(this.ltbclases);

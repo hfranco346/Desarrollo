@@ -41,6 +41,7 @@
             // 
             this.btnDiagrama.BackColor = System.Drawing.Color.White;
             this.btnDiagrama.BackgroundImage = global::Sistema_UNICAH.Properties.Resources.boton;
+            this.btnDiagrama.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDiagrama.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDiagrama.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDiagrama.ForeColor = System.Drawing.Color.White;
@@ -56,6 +57,7 @@
             // 
             this.btnmatricula.BackColor = System.Drawing.Color.White;
             this.btnmatricula.BackgroundImage = global::Sistema_UNICAH.Properties.Resources.boton;
+            this.btnmatricula.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnmatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnmatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmatricula.ForeColor = System.Drawing.Color.White;
@@ -71,6 +73,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.BackgroundImage = global::Sistema_UNICAH.Properties.Resources.boton;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
@@ -86,6 +89,7 @@
             // 
             this.btnSalir.BackColor = System.Drawing.Color.White;
             this.btnSalir.BackgroundImage = global::Sistema_UNICAH.Properties.Resources.boton;
+            this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
@@ -101,6 +105,7 @@
             // 
             this.btnRegistro.BackColor = System.Drawing.Color.White;
             this.btnRegistro.BackgroundImage = global::Sistema_UNICAH.Properties.Resources.boton;
+            this.btnRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistro.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistro.ForeColor = System.Drawing.Color.White;
