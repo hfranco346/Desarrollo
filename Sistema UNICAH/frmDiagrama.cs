@@ -21,6 +21,7 @@ namespace Sistema_UNICAH
     public partial class frmDiagrama : MaterialForm
     {
         string sql;
+        Clases.Conectar conn2 = new Clases.Conectar();
         
         private readonly MaterialSkinManager materialSkinManager;
         List<string> Botones = new List<string>();
@@ -160,7 +161,9 @@ namespace Sistema_UNICAH
             dynamicButton.Visible = true;
 
             // añade un manejador de evento click para el boton
-            dynamicButton.Click += new EventHandler(DynamicButton_Click);
+            //dynamicButton.Click += new EventHandler(DynamicButton_Click);
+            //dynamicButton.Enter += new EventHandler(DynamicButton_Enter);
+            dynamicButton.MouseMove += new MouseEventHandler(DynamicButton_MouseMove);
             dynamicButton.Enter += new EventHandler(DynamicButton_Enter);
 
             // Añade el boton al flowlayoutpanel
@@ -170,11 +173,11 @@ namespace Sistema_UNICAH
             
         }
 
-        private void DynamicButton_Enter(object sender, EventArgs e)
+        private void DynamicButton_MouseMove(object sender, MouseEventArgs e)
         {
             ColorPorDefecto();
             Button dynamicButton = sender as Button;
-            sql = String.Format( "select r.Requisitos_CodigoClaseReq from Requisitos r where r.Requisitos_CodigoClase = '{0}'",dynamicButton.Name);
+            sql = String.Format("select r.Requisitos_CodigoClaseReq from Requisitos r where r.Requisitos_CodigoClase = '{0}'", dynamicButton.Name);
             List<string> listaRequisitos = new List<string>();
             myCommand = conn.Comando(sql);
             conn.DbOpen();
@@ -195,7 +198,7 @@ namespace Sistema_UNICAH
             }
             conn.DbClose();
 
-            
+
 
             sql = String.Format("select r.Requisitos_CodigoClase from Requisitos r where r.Requisitos_CodigoClaseReq = '{0}'", dynamicButton.Name);
             List<string> listaClave = new List<string>();
@@ -217,6 +220,23 @@ namespace Sistema_UNICAH
                 }
             }
             conn.DbClose();
+        }
+
+        private void DynamicButton_DoubleClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hola");
+        }
+
+        private void DynamicButton_Enter(object sender, EventArgs e)
+        {
+            if (!conn.IsDiagrama)
+            {
+                MessageBox.Show("Hola Click");
+            }
+            else
+            {
+                
+            }
             
         }
 

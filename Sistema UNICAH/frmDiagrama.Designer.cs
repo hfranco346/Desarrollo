@@ -56,7 +56,7 @@
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 7, 3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(775, 288);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.flowLayoutPanel1.TabIndex = 1;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // ltbclases
@@ -227,7 +227,7 @@
             this.lbfoto.Location = new System.Drawing.Point(18, 20);
             this.lbfoto.Name = "lbfoto";
             this.lbfoto.Size = new System.Drawing.Size(145, 134);
-            this.lbfoto.TabIndex = 1;
+            this.lbfoto.TabIndex = 0;
             this.lbfoto.Text = "Foto";
             // 
             // label1

@@ -10,6 +10,19 @@ namespace Sistema_UNICAH.Clases
 {
     class Conectar
     {
+        public static bool isDiagrama = false; // Se utiliza para activar o desactivar la matricula
+        public bool IsDiagrama
+        {
+            get
+            {
+                return isDiagrama;
+            }
+            set
+            {
+                isDiagrama = value;
+            }
+        }
+
         public SqlConnection conn = new SqlConnection(@"server = .\sqlexpress;
                     integrated security = true; database = UNICAH");
         public SqlConnection DbOpen()
