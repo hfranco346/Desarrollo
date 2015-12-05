@@ -16,6 +16,7 @@ namespace Sistema_UNICAH
     public partial class frmPrincipal : MaterialForm
     {
 
+        Clases.Conectar conn = new Clases.Conectar();
         private readonly MaterialSkinManager materialSkinManager;
         public frmPrincipal()
         {
@@ -30,12 +31,14 @@ namespace Sistema_UNICAH
         private void btnDiagrama_Click(object sender, EventArgs e)
         {
             frmDiagrama frmdiagrama = new frmDiagrama();
+            conn.IsDiagrama = true;
             frmdiagrama.ShowDialog(this);
         }
 
         private void btnmatricula_Click(object sender, EventArgs e)
         {
             frmDiagrama frmdiagrama = new frmDiagrama();
+            conn.IsDiagrama = false;
             frmdiagrama.Width = 881;
             frmdiagrama.Text = "Diagrama                                                                                                                Universidad Católica de Honduras";
             frmdiagrama.ShowDialog(this);
